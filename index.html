@@ -5,11 +5,27 @@
     <meta name="description" content="Tento projekt vznikol v spolupráci so SME.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
-    <script src="/scripts/script.js"></script>
-
     <title>Bistro u dvou přátel</title>
 </head>
 <body>
-    <!-- Skúšam tu niečo pridať cez Codespaces live editor -->
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span1"></div>
+        <div class="span5">
+            <canvas id="mycanvas" style="border:2px solid #000;"></canvas>
+        </div>
+        <div class="span6">
+            <h1>pjanko</h1>
+            <font size="+2"><span>Body:&nbsp; </span><span id="score"></span></font>
+            <br><br>
+            <font size="+2"><span>Cas:&nbsp; </span><span id="time"></span></font>
+            <br><br>
+            <label for="tl">Hraj </label><input type="text" placeholder="" id="tl">
+            <button class="btn btn-success" onclick="loadcanvas();">Hraj</button>
+            <br><br>
+        </div>
+    </div>
+</div>
+<script src="/scripts/script.js"></script>
 </body>
 </html>
